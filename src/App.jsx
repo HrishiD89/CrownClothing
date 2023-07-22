@@ -13,7 +13,7 @@ const App = () => {
       <Route path="/" element={<Navigation />}>
         <Route index element={<Home />} />
         {/* index is attribute which says index="true" when we match parent / it should render home as initail */}
-        <Route path="shop" element={<Shop />} />
+        <Route path="shop/*" element={<Shop />} />
         <Route path="auth" element={<Authentication />} />
         <Route path="checkout" element={<CheckOut />} />
       </Route>
